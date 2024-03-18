@@ -1,0 +1,123 @@
+/* CSS file of the index page. This file show all styles and effects on the header
+footer and body parts. */
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen; 
+}
+
+header {
+    background-color: gray; 
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-images {
+    display: flex;
+    align-items: center;
+}
+
+.header-images img {
+    margin-right: 10px; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-bottom: 10px; 
+}
+
+.buttons-content {
+    background-color: lightblue; 
+    padding: 20px; 
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 50px;
+}
+
+.container h1 {
+    text-align: center; 
+}
+
+.content {
+    width: 60%; 
+}
+
+.body-text {
+    margin-top: 20px; 
+}
+
+.image-container {
+    width: 40%; 
+    padding-left: 50px; 
+}
+
+.image-container img {
+    width: 11cm;
+    height: 8cm;
+}
+
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+
+.header {
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container {
+    float: right;
+    margin-top: 20px;
+}
+
+
+.sheet {
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.body-text {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: lightblue;
+    padding: 20px;
+    color: white;
+    text-align: center; 
+}
+
+.info-bar {
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin-top: 20px; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
