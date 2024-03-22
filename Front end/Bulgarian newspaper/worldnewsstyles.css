@@ -1,9 +1,10 @@
+<!-- CSS file of worldnews.html -->
+
 @import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
 
 
 body {
   font-family: 'Truculenta', sans-serif;
-  /* Add background image styling */
   background-image: url('interweave_background.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
