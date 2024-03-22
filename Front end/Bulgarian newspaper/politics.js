@@ -41,6 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   renderCalendar(); 
 
-  // Add click event listener to the calendar container
   calendarContainer.addEventListener("click", showNextDay);
 });
