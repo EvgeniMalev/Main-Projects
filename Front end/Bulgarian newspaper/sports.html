@@ -1,0 +1,86 @@
+<!-- Webpage containing countdown watch and display button -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./sportstyles.css">
+  <title>Sports</title>
+</head>
+
+<body onload="startCountdown()">
+  <header>
+    <h1>Sports</h1>
+    <h1 id="green"></h1>
+  </header>
+  <main>
+    <section class="card">
+      <article class="card-content">
+        <h2>Plovdiv stadium</h2>
+        <p>A stadium with a capacity of 150,000 seats will be finished next week.</p>
+
+        <h2>Match results</h2>
+        <button id="showResultsBtn" onclick="showResults()">Show Results</button>
+        <table id="resultsTable" style="border: 0.5px solid black; display: none;">
+          <tr>
+            <th>Match</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>Lozovo vs. Dabovo</td>
+            <td>2-1</td>
+          </tr>
+          <tr>
+            <td>Rila vs. Trakia</td>
+            <td>0-0</td>
+          </tr>
+          <tr>
+            <td>Suhozem vs. Bodrevtsi</td>
+            <td>3-2</td>
+          </tr>
+          <tr>
+            <td>Kaloyan vs. Spartak</td>
+            <td>1-1</td>
+          </tr>
+          <tr>
+            <td>Gorno Dyulevo vs. Lokomotiv</td>
+            <td>2-0</td>
+          </tr>
+          <tr>
+            <td>Radiozavod vs. SK Osam</td>
+            <td>4-3</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <section class="card large-card">
+      <article class="card-content">
+        <h2>Regional rugby league: a brief history</h2>
+        <p>The inaugural competition for amateur rugby teams in Veliko Tarnovo Province kicked off in the late 1950s. Yantra Draganovo emerged victorious in the first tournament, clinching the title. Subsequent editions saw teams like Botev Vishovgrad, Levski Polski Senoets, and CSKA Samovodene competing fiercely for glory. In 1958, Yantra Draganovo secured the championship with an impressive display of skill and teamwork, setting the tone for years to come. The matches were held at various stadiums across Veliko Tarnovo, with enthusiastic crowds cheering on their favorite teams. As the league gained popularity, the level of competition intensified, leading to memorable clashes and thrilling encounters.</p>
+        <p>Statistics:</p>
+        <ul>
+          <li>Year: 1958</li>
+          <li>Champion: Yantra Draganovo</li>
+          <li>Runner-up: Botev Vishovgrad</li>
+          <li>Top Scorer: Ivan Petrov (Levski Polski Senoets) - 12 tries</li>
+          <li>Best Defense: CSKA Samovodene - conceded only 3 tries</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <article class="card-content">
+        <h2>Countdown Timer for the beginning of the new Olympic season</h2>
+        <div id="countdown"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="sport.js"></script>
+</body>
+
+</html>
