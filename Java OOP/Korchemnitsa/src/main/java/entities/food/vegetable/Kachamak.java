@@ -1,4 +1,4 @@
-package entities.food;
+package entities.food.vegetable;
 
 public class Kachamak extends BaseFood{
     private final static int CALORIES = 70;
