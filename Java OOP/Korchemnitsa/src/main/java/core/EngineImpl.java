@@ -47,6 +47,9 @@ public class EngineImpl implements Engine {
             case BuyFood:
                 result = buyFood(data);
                 break;
+            case BuyDrink:
+                result = buyDrink(data);
+                break;
             case CalculateBalance:
                 result = calculateBalance(data);
                 break;
@@ -68,6 +71,10 @@ public class EngineImpl implements Engine {
         return controller.buyFood(data[0]);
     }
 
+    private String buyDrink(String[] data) {
+        return controller.buyDrink(data[0]);
+    }
+    
     private String calculateBalance(String[] data) {
         return controller.calculateBalance(data[0]);
     }
