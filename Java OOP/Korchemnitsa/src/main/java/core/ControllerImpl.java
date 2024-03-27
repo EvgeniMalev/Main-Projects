@@ -14,12 +14,32 @@ public class ControllerImpl implements Controller {
         this.areas = areas;
     }
 
-    @Override
-    public String addVisitorAndEat(String areaName, Visitor visitor, Food food, Alcohol alcohol) {
-        Area area = areas.get(areaName);
-        if (area == null) {
-            return "Area not found.";
-        }
+@Override
+public String addArea(String areaType, String areaName) {
+    // Check if the area already exists
+    if (areas.containsKey(areaName)) {
+        return "Area already exists.";
+    }
+
+    Area newArea;
+    switch (areaType.toLowerCase()) {
+        case "preslav":
+            newArea = new PreslavArea(areaName);
+            break;
+        case "pliska":
+            newArea = new PliskaArea(areaName);
+            break;
+        case "ohrid":
+            newArea = new OhridArea(areaName);
+            break;
+        default:
+            return "Invalid area type.";
+    }
+
+    areas.put(areaName, newArea);
+
+    return "Area added successfully.";
+}
 
   
         area.addVisitor(visitor);
