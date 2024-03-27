@@ -3,9 +3,10 @@ package core;
 public interface Controller {
     String addArea(String areaType, String areaName);
     String buyFood(String type);
+    String buyDrink(String type);
     String foodForArea(String areaName, String foodType);
 
-    String feedVisitor(String areaName);
+    String feedVisitors(String areaName); 
     String calculateBudget(String areaName);
     String getStatistics();
 
